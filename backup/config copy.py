@@ -1,0 +1,9 @@
+MQTT_BROKER = "localhost"
+MQTT_PORT = 1883
+MQTT_USERNAME = None
+MQTT_PASSWORD = None
+MQTT_TOPIC = "N/VRM_ID_PLACEHOLDER/solarcharger/+/DeviceInstance"
+ID_REGEX = r"N\/VRM_ID_PLACEHOLDER\/solarcharger\/(\d+)\/DeviceInstance"
+TIMEOUT = 15
+TIMEOUT_AFTER_FIRST = 15
+SERIAL_FILE = "serial.json"
