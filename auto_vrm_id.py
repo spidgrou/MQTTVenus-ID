@@ -52,7 +52,7 @@ def get_and_save_vrm_id():
             print(f"Errore durante la gestione del file JSON: {e}")
 
     # Creazione del client MQTT
-    client = mqtt.Client()
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
     client.on_connect = on_connect
     client.on_message = on_message
 
