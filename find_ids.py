@@ -119,7 +119,7 @@ def save_to_json(ids, battery_mon_id):
         print(f"Errore durante il salvataggio del file JSON: {e}")
 
 # Creazione del client MQTT
-client = mqtt.Client()
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
 client.on_connect = on_connect
 client.on_message = on_message
 
